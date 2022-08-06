@@ -33,8 +33,6 @@ export const OnPlayerSelectDynamicObject = (
   samp.on("OnPlayerSelectDynamicObject", fn);
 };
 
-// If a return value of 0 is specified, the weapon shot will not be registered.
-// 如果指定了返回值0，那么武器射击将不会被注册。
 export const OnPlayerShootDynamicObject = (
   fn: (
     playerid: number,
@@ -78,16 +76,12 @@ export const OnPlayerLeaveDynamicRaceCP = (
   samp.on("OnPlayerLeaveDynamicRaceCP", fn);
 };
 
-// OnPlayerEnterDynamicArea also called when the player is not spawned (example: spectating).
-// OnPlayerEnterDynamicArea也会在玩家未生成时调用(例如: 观察模式)。
 export const OnPlayerEnterDynamicArea = (
   fn: (playerid: number, areaid: number) => void
 ): void => {
   samp.on("OnPlayerEnterDynamicArea", fn);
 };
 
-// OnPlayerLeaveDynamicArea also called when the player is not spawned (example: spectating).
-// OnPlayerLeaveDynamicArea也会在玩家未生成时调用(例如: 观察模式)。
 export const OnPlayerLeaveDynamicArea = (
   fn: (playerid: number, areaid: number) => void
 ): void => {
@@ -118,24 +112,18 @@ export const OnDynamicActorStreamOut = (
   samp.on("OnDynamicActorStreamOut", fn);
 };
 
-// Streamer_OnItemStreamIn must be enabled using Streamer_ToggleItemCallbacks.
-// Streamer_OnItemStreamIn必须使用Streamer_ToggleItemCallbacks启用。
 export const Streamer_OnItemStreamIn = (
   fn: (type: StreamerItemTypes, id: number, forplayerid: number) => void
 ): void => {
   samp.on("Streamer_OnItemStreamIn", fn);
 };
 
-// Streamer_OnItemStreamOut must be enabled using Streamer_ToggleItemCallbacks.
-// Streamer_OnItemStreamOut必须使用Streamer_ToggleItemCallbacks启用。
 export const Streamer_OnItemStreamOut = (
   fn: (type: StreamerItemTypes, id: number, forplayerid: number) => void
 ): void => {
   samp.on("Streamer_OnItemStreamOut", fn);
 };
 
-// Streamer_OnPluginError must be enabled using Streamer_ToggleErrorCallback.
-// Streamer_OnPluginError必须使用Streamer_ToggleErrorCallback启用。
 export const Streamer_OnPluginError = (fn: (error: string) => void): void => {
   samp.on("Streamer_OnPluginError", fn);
 };

@@ -141,7 +141,6 @@ export const Streamer_CountItems = (
   return samp.callNative("Streamer_CountItems", "ii", type, serverwide);
 };
 
-// Streamer_GetNearbyItems
 export const Streamer_GetNearbyItems = (
   x: number,
   y: number,
