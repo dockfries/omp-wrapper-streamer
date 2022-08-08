@@ -3,5 +3,6 @@
  * https://github.com/samp-incognito/samp-streamer-plugin
  */
 export * from "./callbacks";
-export * from "./enum";
 export * from "./definitions";
+export * from "./enum";
+export * from "./natives";
