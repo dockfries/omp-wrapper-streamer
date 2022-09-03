@@ -9,12 +9,12 @@ export const CreateDynamicRaceCP = (
   nexty: number,
   nextz: number,
   size: number,
-  worldid: number = -1,
-  interiorid: number = -1,
-  playerid: number = -1,
+  worldid = -1,
+  interiorid = -1,
+  playerid = -1,
   streamdistance: number = StreamerDistances.RACE_CP_SD,
-  areaid: number = -1,
-  priority: number = 0
+  areaid = -1,
+  priority = 0
 ): number => {
   return samp.callNative(
     "CreateDynamicRaceCP",

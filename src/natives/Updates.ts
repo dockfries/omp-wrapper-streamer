@@ -57,7 +57,7 @@ export const Streamer_GetLastUpdateTime = (): number => {
 
 export const Streamer_Update = (
   playerid: number,
-  type: number = -1
+  type = -1
 ): number => {
   return samp.callNative("Streamer_Update", "ii", playerid, type);
 };
@@ -67,11 +67,11 @@ export const Streamer_UpdateEx = (
   x: number,
   y: number,
   z: number,
-  worldid: number = -1,
-  interiorid: number = -1,
-  type: number = -1,
-  compensatedtime: number = -1,
-  freezeplayer: boolean = true
+  worldid = -1,
+  interiorid = -1,
+  type = -1,
+  compensatedtime = -1,
+  freezeplayer = true
 ): number => {
   return samp.callNative(
     "Streamer_UpdateEx",

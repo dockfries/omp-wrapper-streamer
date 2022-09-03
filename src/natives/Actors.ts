@@ -6,14 +6,14 @@ export const CreateDynamicActor = (
   y: number,
   z: number,
   r: number,
-  invulnerable: boolean = true,
-  health: number = 100.0,
-  worldid: number = -1,
-  interiorid: number = -1,
-  playerid: number = -1,
+  invulnerable = true,
+  health = 100.0,
+  worldid = -1,
+  interiorid = -1,
+  playerid = -1,
   streamdistance: number = StreamerDistances.ACTOR_SD,
-  areaid: number = -1,
-  priority: number = 0
+  areaid = -1,
+  priority = 0
 ): number => {
   return samp.callNative(
     "CreateDynamicActor",
@@ -134,7 +134,7 @@ export const SetDynamicActorHealth = (
 
 export const SetDynamicActorInvulnerable = (
   actorid: number,
-  invulnerable: boolean = true
+  invulnerable = true
 ): number => {
   return samp.callNative(
     "SetDynamicActorInvulnerable",

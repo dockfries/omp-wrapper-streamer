@@ -8,13 +8,13 @@ export const CreateDynamicObject = (
   rx: number,
   ry: number,
   rz: number,
-  worldid: number = -1,
-  interiorid: number = -1,
-  playerid: number = -1,
+  worldid = -1,
+  interiorid = -1,
+  playerid = -1,
   streamdistance: number = StreamerDistances.OBJECT_SD,
   drawdistance: number = StreamerDistances.OBJECT_DD,
-  areaid: number = -1,
-  priority: number = 0
+  areaid = -1,
+  priority = 0
 ): number => {
   return samp.callNative(
     "CreateDynamicObject",
@@ -86,9 +86,9 @@ export const MoveDynamicObject = (
   y: number,
   z: number,
   speed: number,
-  rx: number = -1000.0,
-  ry: number = -1000.0,
-  rz: number = -1000.0
+  rx = -1000.0,
+  ry = -1000.0,
+  rz = -1000.0
 ): number => {
   return samp.callNative(
     "MoveDynamicObject",
@@ -133,7 +133,7 @@ export const AttachDynamicObjectToObject = (
   rx: number,
   ry: number,
   rz: number,
-  syncrotation: boolean = true
+  syncrotation = true
 ): number => {
   return samp.callNative(
     "AttachDynamicObjectToObject",
@@ -256,7 +256,7 @@ export const SetDynamicObjectMaterial = (
   modelid: number,
   txdname: string,
   texturename: string,
-  materialcolor: number = 0
+  materialcolor = 0
 ): number => {
   return samp.callNative(
     "SetDynamicObjectMaterial",
@@ -300,7 +300,7 @@ export const GetDynamicObjectMaterialText = (
   objectid: number,
   materialindex: number
 ) => {
-  let [
+  const [
     text,
     materialsize,
     fontface,
@@ -349,12 +349,12 @@ export const SetDynamicObjectMaterialText = (
   materialindex: number,
   text: string,
   materialsize: number = MaterialTextSizes.SIZE_256x128,
-  fontface: string = "Arial",
-  fontsize: number = 24,
+  fontface = "Arial",
+  fontsize = 24,
   bold = 1,
-  fontcolor: number = 0xffffffff,
-  backcolor: number = 0,
-  textalignment: number = 0
+  fontcolor = 0xffffffff,
+  backcolor = 0,
+  textalignment = 0
 ): number => {
   return samp.callNative(
     "SetDynamicObjectMaterialText",

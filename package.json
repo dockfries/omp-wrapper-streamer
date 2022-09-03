@@ -1,11 +1,13 @@
 {
   "name": "omp-wrapper-streamer",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "A wrapper of the popular SA-MP streamer plugin (v2.9.5) for samp-node.",
-  "main": "dist/index.js",
-  "types": "dist/index.d.ts",
+  "main": "dist/bundle.js",
+  "types": "dist/bundle.d.ts",
   "scripts": {
-    "build": "rollup -c"
+    "lint": "eslint --fix ./src",
+    "build": "npm run lint && rollup -c",
+    "prepublishOnly": "npm run build"
   },
   "repository": {
     "type": "git",
@@ -26,8 +28,13 @@
   "license": "ISC",
   "devDependencies": {
     "@sa-mp/node": "^0.2.0",
+    "@typescript-eslint/eslint-plugin": "^5.36.1",
+    "@typescript-eslint/parser": "^5.36.1",
+    "eslint": "^8.23.0",
     "rollup": "^2.77.2",
     "rollup-plugin-delete": "^2.0.0",
+    "rollup-plugin-dts": "^4.2.2",
+    "rollup-plugin-node-externals": "^4.1.1",
     "rollup-plugin-terser": "^7.0.2",
     "rollup-plugin-typescript2": "^0.32.1",
     "typescript": "^4.7.4"

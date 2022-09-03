@@ -7,15 +7,15 @@ export const CreateDynamic3DTextLabel = (
   y: number,
   z: number,
   drawdistance: number,
-  attachedplayer: number = 0xffff,
-  attachedvehicle: number = 0xffff,
-  testlos: boolean = false,
-  worldid: number = -1,
-  interiorid: number = -1,
-  playerid: number = -1,
+  attachedplayer = 0xffff,
+  attachedvehicle = 0xffff,
+  testlos = false,
+  worldid = -1,
+  interiorid = -1,
+  playerid = -1,
   streamdistance: number = StreamerDistances.TEXT_3D_LABEL_SD,
-  areaid: number = -1,
-  priority: number = 0
+  areaid = -1,
+  priority = 0
 ): number => {
   return samp.callNative(
     "CreateDynamic3DTextLabel",

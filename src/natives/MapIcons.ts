@@ -19,8 +19,8 @@ export const CreateDynamicMapIcon = (
   playerid = -1,
   streamdistance: number = StreamerDistances.MAP_ICON_SD,
   style: number = MapIconStyles.LOCAL,
-  areaid: number = -1,
-  priority: number = 0
+  areaid = -1,
+  priority = 0
 ): number => {
   return samp.callNative(
     "CreateDynamicMapIcon",
