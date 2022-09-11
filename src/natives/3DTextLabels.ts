@@ -1,4 +1,4 @@
-import StreamerDistances from "../definitions/Distances";
+import { StreamerDistances } from "../definitions/Distances";
 
 export const CreateDynamic3DTextLabel = (
   text: string,

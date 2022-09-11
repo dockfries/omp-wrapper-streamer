@@ -1,4 +1,4 @@
-import StreamerItemTypes from "../definitions/ItemTypes";
+import { StreamerItemTypes } from "../definitions/ItemTypes";
 
 export const Streamer_GetDistanceToItem = (
   x: number,

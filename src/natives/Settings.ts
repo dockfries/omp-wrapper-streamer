@@ -1,7 +1,8 @@
-import StreamerItemTypes, {
+import {
+  StreamerItemTypes,
   StreamerItemTypeTuple,
 } from "../definitions/ItemTypes";
-import StreamerMiscellaneous from "../definitions/Miscellaneous";
+import { StreamerMiscellaneous } from "../definitions/Miscellaneous";
 
 export const Streamer_GetTickRate = (): number => {
   return samp.callNative("Streamer_GetTickRate", "");

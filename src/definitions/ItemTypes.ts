@@ -1,4 +1,4 @@
-enum StreamerItemTypes {
+export enum StreamerItemTypes {
   OBJECT,
   PICKUP,
   CP,
@@ -18,4 +18,3 @@ export type StreamerItemTypeTuple = [
   StreamerItemTypes,
   StreamerItemTypes
 ];
-export default StreamerItemTypes;

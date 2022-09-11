@@ -1,4 +1,4 @@
-enum StreamerAreaTypes {
+export enum StreamerAreaTypes {
   CIRCLE,
   CYLINDER,
   SPHERE,
@@ -6,4 +6,3 @@ enum StreamerAreaTypes {
   CUBOID,
   POLYGON,
 }
-export default StreamerAreaTypes;

@@ -1,4 +1,4 @@
-enum E_STREAMER {
+export enum E_STREAMER {
   AREA_ID,
   ATTACHED_OBJECT,
   ATTACHED_PLAYER,
@@ -52,4 +52,3 @@ enum E_STREAMER {
   Y,
   Z,
 }
-export default E_STREAMER;

@@ -1,4 +1,4 @@
-import StreamerObjectTypes from "../definitions/ObjectTypes";
+import { StreamerObjectTypes } from "../definitions/ObjectTypes";
 
 export const CreateDynamicCircle = (
   x: number,
@@ -188,9 +188,7 @@ export const IsAnyPlayerInDynamicArea = (
   );
 };
 
-export const IsAnyPlayerInAnyDynamicArea = (
-  recheck = false
-): boolean => {
+export const IsAnyPlayerInAnyDynamicArea = (recheck = false): boolean => {
   return Boolean(samp.callNative("IsAnyPlayerInAnyDynamicArea", "i", recheck));
 };
 

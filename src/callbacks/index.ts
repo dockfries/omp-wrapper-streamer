@@ -1,4 +1,4 @@
-import StreamerItemTypes from "../definitions/ItemTypes";
+import { StreamerItemTypes } from "../definitions/ItemTypes";
 
 export const OnDynamicObjectMoved = (fn: (objectid: number) => void): void => {
   samp.on("OnDynamicObjectMoved", fn);

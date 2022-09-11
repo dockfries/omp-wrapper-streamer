@@ -1,4 +1,4 @@
-import StreamerItemTypes from "../definitions/ItemTypes";
+import { StreamerItemTypes } from "../definitions/ItemTypes";
 
 export const Streamer_ProcessActiveItems = (): number => {
   return samp.callNative("Streamer_ProcessActiveItems", "");
@@ -55,10 +55,7 @@ export const Streamer_GetLastUpdateTime = (): number => {
   return samp.callNative("Streamer_GetLastUpdateTime", "F");
 };
 
-export const Streamer_Update = (
-  playerid: number,
-  type = -1
-): number => {
+export const Streamer_Update = (playerid: number, type = -1): number => {
   return samp.callNative("Streamer_Update", "ii", playerid, type);
 };
 

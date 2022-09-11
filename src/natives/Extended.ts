@@ -1,4 +1,4 @@
-import StreamerDistances from "../definitions/Distances";
+import { StreamerDistances } from "../definitions/Distances";
 import { MapIconStyles } from "./MapIcons";
 
 export const CreateDynamicObjectEx = (
