@@ -95,8 +95,10 @@ export const Streamer_IsItemVisible = (
   playerid: number,
   type: StreamerItemTypes,
   id: number
-): number => {
-  return samp.callNative("Streamer_IsItemVisible", "iii", playerid, type, id);
+): boolean => {
+  return Boolean(
+    samp.callNative("Streamer_IsItemVisible", "iii", playerid, type, id)
+  );
 };
 
 export const Streamer_DestroyAllVisibleItems = (
