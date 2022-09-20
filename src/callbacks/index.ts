@@ -1,6 +1,8 @@
 import { StreamerItemTypes } from "../definitions/ItemTypes";
 
-export const OnDynamicObjectMoved = (fn: (objectid: number) => void): void => {
+export const OnDynamicObjectMoved = (
+  fn: (objectid: number) => number
+): void => {
   samp.on("OnDynamicObjectMoved", fn);
 };
 
@@ -15,7 +17,7 @@ export const OnPlayerEditDynamicObject = (
     rx: number,
     ry: number,
     rz: number
-  ) => void
+  ) => number
 ): void => {
   samp.on("OnPlayerEditDynamicObject", fn);
 };
@@ -28,7 +30,7 @@ export const OnPlayerSelectDynamicObject = (
     x: number,
     y: number,
     z: number
-  ) => void
+  ) => number
 ): void => {
   samp.on("OnPlayerSelectDynamicObject", fn);
 };
@@ -47,43 +49,43 @@ export const OnPlayerShootDynamicObject = (
 };
 
 export const OnPlayerPickUpDynamicPickup = (
-  fn: (playerid: number, pickupid: number) => void
+  fn: (playerid: number, pickupid: number) => number
 ): void => {
   samp.on("OnPlayerPickUpDynamicPickup", fn);
 };
 
 export const OnPlayerEnterDynamicCP = (
-  fn: (playerid: number, checkpointid: number) => void
+  fn: (playerid: number, checkpointid: number) => number
 ): void => {
   samp.on("OnPlayerEnterDynamicCP", fn);
 };
 
 export const OnPlayerLeaveDynamicCP = (
-  fn: (playerid: number, checkpointid: number) => void
+  fn: (playerid: number, checkpointid: number) => number
 ): void => {
   samp.on("OnPlayerLeaveDynamicCP", fn);
 };
 
 export const OnPlayerEnterDynamicRaceCP = (
-  fn: (playerid: number, checkpointid: number) => void
+  fn: (playerid: number, checkpointid: number) => number
 ): void => {
   samp.on("OnPlayerEnterDynamicRaceCP", fn);
 };
 
 export const OnPlayerLeaveDynamicRaceCP = (
-  fn: (playerid: number, checkpointid: number) => void
+  fn: (playerid: number, checkpointid: number) => number
 ): void => {
   samp.on("OnPlayerLeaveDynamicRaceCP", fn);
 };
 
 export const OnPlayerEnterDynamicArea = (
-  fn: (playerid: number, areaid: number) => void
+  fn: (playerid: number, areaid: number) => number
 ): void => {
   samp.on("OnPlayerEnterDynamicArea", fn);
 };
 
 export const OnPlayerLeaveDynamicArea = (
-  fn: (playerid: number, areaid: number) => void
+  fn: (playerid: number, areaid: number) => number
 ): void => {
   samp.on("OnPlayerLeaveDynamicArea", fn);
 };
@@ -95,35 +97,35 @@ export const OnPlayerGiveDamageDynamicActor = (
     amount: number,
     weaponid: number,
     bodypart: number
-  ) => void
+  ) => number
 ): void => {
   samp.on("OnPlayerGiveDamageDynamicActor", fn);
 };
 
 export const OnDynamicActorStreamIn = (
-  fn: (actorid: number, forplayerid: number) => void
+  fn: (actorid: number, forplayerid: number) => number
 ): void => {
   samp.on("OnDynamicActorStreamIn", fn);
 };
 
 export const OnDynamicActorStreamOut = (
-  fn: (actorid: number, forplayerid: number) => void
+  fn: (actorid: number, forplayerid: number) => number
 ): void => {
   samp.on("OnDynamicActorStreamOut", fn);
 };
 
 export const Streamer_OnItemStreamIn = (
-  fn: (type: StreamerItemTypes, id: number, forplayerid: number) => void
+  fn: (type: StreamerItemTypes, id: number, forplayerid: number) => number
 ): void => {
   samp.on("Streamer_OnItemStreamIn", fn);
 };
 
 export const Streamer_OnItemStreamOut = (
-  fn: (type: StreamerItemTypes, id: number, forplayerid: number) => void
+  fn: (type: StreamerItemTypes, id: number, forplayerid: number) => number
 ): void => {
   samp.on("Streamer_OnItemStreamOut", fn);
 };
 
-export const Streamer_OnPluginError = (fn: (error: string) => void): void => {
+export const Streamer_OnPluginError = (fn: (error: string) => number): void => {
   samp.on("Streamer_OnPluginError", fn);
 };
