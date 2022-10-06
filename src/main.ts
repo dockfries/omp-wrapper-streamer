@@ -6,3 +6,4 @@ export * from "./callbacks";
 export * from "./definitions";
 export * from "./enum";
 export * from "./natives";
+import "./callbacks/register";
