@@ -1,7 +1,7 @@
 import { StreamerItemTypes } from "../definitions/ItemTypes";
 import { E_STREAMER } from "../enum";
 
-type StreamerArrayData =
+export type StreamerArrayData =
   | E_STREAMER.AREA_ID
   | E_STREAMER.EXTRA_ID
   | E_STREAMER.INTERIOR_ID
