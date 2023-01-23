@@ -1,11 +1,13 @@
 # omp-wrapper-streamer
 
+[![npm](https://img.shields.io/npm/v/omp-wrapper-streamer)](https://www.npmjs.com/package/omp-wrapper-streamer) ![npm bundle size](https://img.shields.io/bundlephobia/minzip/omp-wrapper-streamer)
+
 A functional wrapper of the popular SA-MP streamer plugin (v2.9.5) for samp-node.
 
 ## Getting started
 
 ```sh
-npm install omp-wrapper-streamer
+pnpm add omp-wrapper-streamer
 ```
 
 ## Example
