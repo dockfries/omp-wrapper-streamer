@@ -1,3 +1,5 @@
+> ⚠️ DEPRECATED: please use [@infernus/streamer](https://github.com/dockfries/infernus/tree/main/packages/streamer) instead.
+
 # omp-wrapper-streamer
 
 [![npm](https://img.shields.io/npm/v/omp-wrapper-streamer)](https://www.npmjs.com/package/omp-wrapper-streamer) ![npm bundle size](https://img.shields.io/bundlephobia/minzip/omp-wrapper-streamer)
